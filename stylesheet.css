@@ -8,6 +8,9 @@ body {
     background-color: #f5f5f5;
     color: var(--med-blue);
     font-family: var(--ff-primary);
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
 }
 
 #post {

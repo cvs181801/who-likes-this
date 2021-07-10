@@ -1,0 +1,32 @@
+:root {
+    --ff-primary: 'Hind Siliguri', sans-serif;
+    --ff-accent: 'Padauk', sans-serif;
+    --med-blue: rgb(0, 119, 255);
+}
+
+body {
+    background-color: #f5f5f5;
+    color: var(--med-blue);
+    font-family: var(--ff-primary);
+}
+
+#post {
+    background-color: grey;
+    padding: 1em;
+    font-family: inherit;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#add-new {
+    background-color: navy;
+    color: var(--med-blue);
+    border-radius: 12px;
+}
+
+#container-div {
+    display: grid;
+}

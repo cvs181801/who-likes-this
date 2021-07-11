@@ -6,6 +6,9 @@ let childFriendDiv = createElement("div");
 
 //make the add new button create a new 'friend'.
 
+console.log(parentDiv);
+console.log(addNewButton);
+
 function addFriend(name) {
     childFriendDiv = createElement("div");
     childFriendDiv.innerHTML = `${name}`;
@@ -14,6 +17,7 @@ function addFriend(name) {
 
 addNewButton.addEventListenter('click', function(e) {
     e.preventDefault();
+    console.log("it worked!");
     return addFriend("Joice");
 })
 

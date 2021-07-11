@@ -11,13 +11,19 @@ let childFriendDiv = document.createElement("div");
 //console.log(addNewButton);
 
 function addFriend(name) {
+    //create a new 'friend' using the name, then attach it below
     childFriendDiv = document.createElement("div");
-    childFriendDiv.classList.add('friend');
+    childFriendDiv.id.add('friend');
     childFriendDiv.textContent = `${name}`;
     parentDiv.append(childFriendDiv);
+    //create a 'person icon' image, then attach it above the name
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
     parentDiv.prepend(personPic);
+    let likeButton = document.createElement("button");
+    likeButton.textContent = `👍`;
+    childFriendDiv.append(likeButton);
+    console.log(likeButton);
     
 }
 

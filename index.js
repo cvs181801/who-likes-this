@@ -2,7 +2,7 @@
 
 const addNewButton = document.getElementById("add-new");
 const parentDiv = document.getElementById("container-div");
-let childFriendDiv = createElement("div");
+let childFriendDiv = document.createElement("div");
 
 //make the add new button create a new 'friend'.
 

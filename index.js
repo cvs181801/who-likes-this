@@ -13,7 +13,7 @@ let childFriendDiv = document.createElement("div");
 function addFriend(name) {
     //create a new 'friend' using the name, then attach it below
     childFriendDiv = document.createElement("div");
-    childFriendDiv.id.add('friend');
+    childFriendDiv.id = "friend";
     childFriendDiv.textContent = `${name}`;
     parentDiv.append(childFriendDiv);
     //create a 'person icon' image, then attach it above the name

@@ -14,7 +14,7 @@ function addFriend(name) {
     childFriendDiv = document.createElement("div");
     // childFriendDiv.textContent = `${name}`;
     // parentDiv.append(childFriendDiv);
-    childFriendDivHtml.appendTo('parentDiv');
+    (childFriendDivHtml).appendTo('parentDiv');
 }
 
 addNewButton.addEventListener('click', function(e) {

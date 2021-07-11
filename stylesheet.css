@@ -32,10 +32,15 @@ img {
     border-radius: 12px;
 }
 
-#container-div {
+#container-div-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-div-2 {
     display: grid;
 }
 
-#container-div div {
+#container-div-2 div {
     background-color: var(--med-blue);
 }

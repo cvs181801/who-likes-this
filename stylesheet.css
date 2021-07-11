@@ -37,6 +37,10 @@ img {
     flex-direction: column;
 }
 
+#side-div {
+    width: 30vh;
+}
+
 #container-div-2 {
     display: grid;
 }

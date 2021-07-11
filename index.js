@@ -11,7 +11,7 @@ console.log(addNewButton);
 
 function addFriend(name) {
     childFriendDiv = document.createElement("div");
-    childFriendDiv.innerHTML = `${name}`;
+    childFriendDiv.textContent = `${name}`;
     parentDiv.append(childFriendDiv);
 }
 
@@ -21,3 +21,6 @@ addNewButton.addEventListener('click', function(e) {
     return addFriend("Joice");
 })
 
+//code with: node.textContent instead on element.innerHTML
+//adjusting CSS in JS
+//toggling classes in JS

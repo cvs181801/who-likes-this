@@ -37,7 +37,7 @@ img {
     flex-direction: column;
 }
 
-#side-div {
+.side-div {
     border: 2px solid magenta;
     width: 30vw;
 }

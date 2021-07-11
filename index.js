@@ -11,35 +11,46 @@ console.log(likeCounter);
 //make a way to create a new "friend".
 
 function addFriend(name) {
+
     //create a new 'friend' using the name, then attach it below
     childFriendDiv = document.createElement("div");
     childFriendDiv.id = "friend";
-    childFriendDiv.textContent = `${name}`;
+    let nameInput = document.createElement("input");
     parentDiv.append(childFriendDiv);
+    console.log(nameInput); //check the input field
+    childFriendDiv.append(nameInput);
+    childFriendDiv.textContent = `${nameInput.value}`;
+
     //create a 'person icon' image, then attach it above the name
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
     childFriendDiv.prepend(personPic);
+
     //create a 'like' button
     likeButton.textContent = `👍`;
     childFriendDiv.append(likeButton);
-    //console.log(likeButton);
+    
     //create a 'unlike' button
     unlikeButton.textContent = `👎`;
     childFriendDiv.append(unlikeButton);
     console.log(unlikeButton);
 }
 
-let likeCount = 0;
-
 //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
+
+let likeCount = 0;
 
 likeButton.addEventListener("click", function(e) {
     e.preventDefault();
     likeCount++;
     console.log(likeCount);
     let likeCounter = document.getElementById("like-counter");
-    likeCounter.textContent = `${likeCount} person liked this post.`
+    if (likeCounter === 1) {
+        return likeCounter.textContent = `${likeCount} person liked this post.`
+    } else {
+        return likeCounter.textContent = `${likeCount} people liked this post.`
+    }
+  
 }) 
 
 unlikeButton.addEventListener("click", function(e) {

@@ -17,7 +17,7 @@ body {
     background-color: grey;
     padding: 1em;
     font-family: inherit;
-    width: 50vh;
+    /*width: 50vh;*/
 }
 
 img {
@@ -34,4 +34,8 @@ img {
 
 #container-div {
     display: grid;
+}
+
+#container-div div {
+    background-color: var(--med-blue);
 }

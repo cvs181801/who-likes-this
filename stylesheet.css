@@ -38,7 +38,8 @@ img {
 }
 
 #side-div {
-    width: 30vh;
+    border: 2px solid magenta;
+    width: 30vw;
 }
 
 #container-div-2 {

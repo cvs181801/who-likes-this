@@ -19,7 +19,7 @@ function addFriend(name) {
     //create a 'person icon' image, then attach it above the name
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
-    parentDiv.prepend(personPic);
+    childFriendDiv.prepend(personPic);
     let likeButton = document.createElement("button");
     likeButton.textContent = `👍`;
     childFriendDiv.append(likeButton);

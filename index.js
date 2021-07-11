@@ -10,17 +10,17 @@ let childFriendDiv = document.createElement("div");
 //console.log(parentDiv);
 //console.log(addNewButton);
 
-function addFriend(name) {
+function addFriend() {
     childFriendDiv = document.createElement("div");
     // childFriendDiv.textContent = `${name}`;
     // parentDiv.append(childFriendDiv);
-    ('<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>').appendTo('parentDiv');
+    childFriendDiv.textContent = '<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>';
 }
 
 addNewButton.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("it worked!");
-    return addFriend("Joice");
+    return addFriend();
 })
 
 //code with: node.textContent instead on element.innerHTML

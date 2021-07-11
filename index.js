@@ -20,11 +20,16 @@ function addFriend(name) {
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
     childFriendDiv.prepend(personPic);
+    //create a 'like' button
     let likeButton = document.createElement("button");
     likeButton.textContent = `👍`;
     childFriendDiv.append(likeButton);
-    console.log(likeButton);
-    
+    //console.log(likeButton);
+    //create a 'unlike' button
+    let unlikeButton = document.createElement("button");
+    unlikeButton.textContent = `👍`;
+    childFriendDiv.append(unlikeButton);
+    console.log(unlikeButton);
 }
 
 addNewButton.addEventListener('click', function(e) {

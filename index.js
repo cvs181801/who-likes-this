@@ -11,7 +11,7 @@ let childFriendDiv = document.createElement("div");
 
 function addFriend(name) {
     childFriendDiv = document.createElement("div");
-    childFriendDiv.textContent = `${name}`;
+    childFriendDiv.textContent = `${name} <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg">`;
     parentDiv.append(childFriendDiv);
 }
 

@@ -13,8 +13,8 @@ let childFriendDiv = document.createElement("div");
 function addFriend() {
     childFriendDiv = document.createElement("div");
     // childFriendDiv.textContent = `${name}`;
-    // parentDiv.append(childFriendDiv);
     childFriendDiv.textContent = '<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>';
+    parentDiv.append(childFriendDiv);
 }
 
 addNewButton.addEventListener('click', function(e) {

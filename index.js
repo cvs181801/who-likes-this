@@ -10,7 +10,7 @@ console.log(parentDiv);
 console.log(addNewButton);
 
 function addFriend(name) {
-    childFriendDiv = createElement("div");
+    childFriendDiv = document.createElement("div");
     childFriendDiv.innerHTML = `${name}`;
     parentDiv.append(childFriendDiv);
 }

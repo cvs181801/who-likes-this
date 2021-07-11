@@ -1,13 +1,13 @@
 //grab elements from the DOM
 
 const addNewButton = document.getElementById("add-new");
-const parentDiv = document.getElementById("container-div");
+const parentDiv = document.getElementById("container-div-2");
 let childFriendDiv = document.createElement("div");
 
 //make the add new button create a new 'friend'.
 
-console.log(parentDiv);
-console.log(addNewButton);
+//console.log(parentDiv);
+//console.log(addNewButton);
 
 function addFriend(name) {
     childFriendDiv = document.createElement("div");

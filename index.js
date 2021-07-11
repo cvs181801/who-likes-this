@@ -38,6 +38,7 @@ likeButton.addEventListener("click", function(e) {
     e.preventDefault();
     likeCount++;
     console.log(likeCount);
+    let likeCounter = document.getElementById("like-counter");
     likeCounter.textContent = `${likeCount} person liked this post.`
 }) 
 
@@ -45,6 +46,7 @@ unlikeButton.addEventListener("click", function(e) {
     e.preventDefault();
     likeCount -= 1;
     console.log(likeCount);
+    let likeCounter = document.getElementById("like-counter");
     likeCounter.textContent = `${likeCount} person unliked this post.`
 })
 

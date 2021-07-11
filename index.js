@@ -3,12 +3,12 @@
 const addNewButton = document.getElementById("add-new");
 const parentDiv = document.getElementById("container-div-2");
 let childFriendDiv = document.createElement("div");
-//let childFriendDivHtml = '<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>' 
+let likeButton = document.createElement("button");
+let unlikeButton = document.createElement("button");
+let likeCounter = document.getElementById("like-counter");
 
-//make the add new button create a new 'friend'.
-
-//console.log(parentDiv);
-//console.log(addNewButton);
+console.log(likeCounter);
+//make a way to create a new "friend".
 
 function addFriend(name) {
     //create a new 'friend' using the name, then attach it below
@@ -21,23 +21,40 @@ function addFriend(name) {
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
     childFriendDiv.prepend(personPic);
     //create a 'like' button
-    let likeButton = document.createElement("button");
     likeButton.textContent = `👍`;
     childFriendDiv.append(likeButton);
     //console.log(likeButton);
     //create a 'unlike' button
-    let unlikeButton = document.createElement("button");
-    unlikeButton.textContent = `👍`;
+    unlikeButton.textContent = `👎`;
     childFriendDiv.append(unlikeButton);
     console.log(unlikeButton);
 }
 
+let likeCount = 0;
+
+//make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
+
+likeButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    likeCount++;
+    console.log(likeCount);
+    likeCounter.textContent = `${likeCount} person liked this post.`
+}) 
+
+unlikeButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    likeCount -= 1;
+    console.log(likeCount);
+    likeCounter.textContent = `${likeCount} person unliked this post.`
+})
+
+//make the add new button create a new 'friend'.
+
 addNewButton.addEventListener('click', function(e) {
     e.preventDefault();
-    console.log("it worked!");
+    console.log("add new friend btn worked!");
     return addFriend("Joy");
 })
 
-//code with: node.textContent instead on element.innerHTML
-//adjusting CSS in JS
-//toggling classes in JS
+
+    

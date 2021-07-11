@@ -17,9 +17,8 @@ function addFriend(name) {
     parentDiv.append(childFriendDiv);
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
-    let friendDivs = document.querySelectorAll(".friend");
-    parentDiv.append(personPic);
-    console.log(friendDivs);
+    parentDiv.prepend(personPic);
+    
 }
 
 addNewButton.addEventListener('click', function(e) {

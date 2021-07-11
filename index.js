@@ -15,7 +15,7 @@ function addFriend(name) {
     parentDiv.append(childFriendDiv);
 }
 
-addNewButton.addEventListenter('click', function(e) {
+addNewButton.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("it worked!");
     return addFriend("Joice");

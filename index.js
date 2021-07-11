@@ -3,7 +3,7 @@
 const addNewButton = document.getElementById("add-new");
 const parentDiv = document.getElementById("container-div-2");
 let childFriendDiv = document.createElement("div");
-let childFriendDivHtml = '<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>' 
+//let childFriendDivHtml = '<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>' 
 
 //make the add new button create a new 'friend'.
 
@@ -14,7 +14,7 @@ function addFriend(name) {
     childFriendDiv = document.createElement("div");
     // childFriendDiv.textContent = `${name}`;
     // parentDiv.append(childFriendDiv);
-    (childFriendDivHtml).appendTo('parentDiv');
+    ('<div class="friend-div"> <img src="/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg"> </div>').appendTo('parentDiv');
 }
 
 addNewButton.addEventListener('click', function(e) {

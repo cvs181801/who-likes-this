@@ -23,10 +23,11 @@ function friendSaved(name) {
     childFriendDiv.id = "friend";
     savedFriendsDiv.append(childFriendDiv);
     friendNameLabel = document.createElement("p");
-    childFriendDiv.append(friendNameLabel);
-console.log(friendNameLabel);
-    //nameInput = document.createElement("input"); we just had this here for reference
     friendNameLabel.textContent = `${name}`;
+    childFriendDiv.append(friendNameLabel);
+    console.log(friendNameLabel);
+    //nameInput = document.createElement("input"); we just had this here for reference
+    
 
     //create a 'person icon' image, then attach it above the name
     let personPic = document.createElement("img");

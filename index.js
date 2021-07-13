@@ -23,7 +23,8 @@ function friendSaved(name) {
     childFriendDiv.id = "friend";
     savedFriendsDiv.append(childFriendDiv);
     friendNameLabel = document.createElement("p");
-    childFriendDiv.prepend(friendNameLabel);
+    childFriendDiv.append(friendNameLabel);
+console.log(friendNameLabel);
     //nameInput = document.createElement("input"); we just had this here for reference
     friendNameLabel.textContent = `${name}`;
 

@@ -7,7 +7,7 @@ let likeButton = document.createElement("button");
 let unlikeButton = document.createElement("button");
 let likeCounter = document.getElementById("like-counter");
 let saveNewFriendButton = document.createElement("button");
-const savedFriendsDiv = document.getElementById("container-div-3");
+let savedFriendsDiv = document.getElementById("container-div-3");
 let nameInput = document.createElement("input");
 let newFriendDiv = document.createElement("div");
 
@@ -17,6 +17,7 @@ console.log(likeCounter);
 
 function friendSaved(name) {
     //save the new friend
+    savedFriendsDiv = document.getElementById("container-div-3");
     childFriendDiv = document.createElement("div");
     childFriendDiv.id = "friend";
     savedFriendsDiv.append(childFriendDiv);
@@ -65,8 +66,6 @@ function addFriend() {
 })
     
 }
-saveNewFriendButton = document.getElementById("save-friend-btn");
-console.log(saveNewFriendButton);
 
 //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
 

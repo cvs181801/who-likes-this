@@ -25,11 +25,14 @@ function addFriend() {
 
     //once the friend's name is entered, make a button to save the name
     let saveNewFriendButton = document.createElement("button");
+    saveNewFriendButton.id = "save-friend-btn";
     saveNewFriendButton.textContent = "Add Friend";
+    let saveNewFriendButton = document.getElementById("save-friend-btn");
     newFriendDiv.append(saveNewFriendButton);
     
 }
-
+saveNewFriendButton = document.getElementById("save-friend-btn");
+console.log(saveNewFriendButton);
 //save the new friend when the save new friend button is pushed.
 
 function friendSaved(name) {
@@ -92,7 +95,7 @@ addNewButton.addEventListener('click', function(e) {
 saveNewFriendButton.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("save new friend button worked!");
-    return friendSaved("Joy");
+    return friendSaved(nameInput.value);
 })
     
 console.log("name input =" + nameInput.value);

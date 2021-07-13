@@ -16,6 +16,7 @@ function addFriend(name) {
     childFriendDiv = document.createElement("div");
     childFriendDiv.id = "friend";
     let nameInput = document.createElement("input");
+    nameInput.type = text;
     parentDiv.append(childFriendDiv);
     console.log(nameInput); //check the input field
     childFriendDiv.append(nameInput);
@@ -45,7 +46,7 @@ likeButton.addEventListener("click", function(e) {
     likeCount++;
     console.log(likeCount);
     let likeCounter = document.getElementById("like-counter");
-    if (likeCounter === 1) {
+    if (likeCounter <= 1) {
         return likeCounter.textContent = `${likeCount} person liked this post.`
     } else {
         return likeCounter.textContent = `${likeCount} people liked this post.`

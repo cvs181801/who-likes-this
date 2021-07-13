@@ -27,7 +27,6 @@ function addFriend() {
     let saveNewFriendButton = document.createElement("button");
     saveNewFriendButton.id = "save-friend-btn";
     saveNewFriendButton.textContent = "Add Friend";
-    let saveNewFriendButton = document.getElementById("save-friend-btn");
     newFriendDiv.append(saveNewFriendButton);
     
 }

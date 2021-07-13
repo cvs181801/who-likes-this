@@ -16,6 +16,7 @@ console.log(likeCounter);
 //save the new friend when the save new friend button is pushed.
 
 function friendSaved(name) {
+    parentDiv.textContent = "";
     //save the new friend
     savedFriendsDiv = document.getElementById("container-div-3");
     childFriendDiv = document.createElement("div");
@@ -60,9 +61,9 @@ function addFriend() {
     //make the 'save new friend' button work
      
     saveNewFriendButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    console.log("save new friend button worked!");
-    return friendSaved(nameInput.value);
+        e.preventDefault();
+        console.log("save new friend button worked!");
+        return friendSaved(nameInput.value);
 })
     
 }

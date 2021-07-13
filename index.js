@@ -9,23 +9,23 @@ let likeCounter = document.getElementById("like-counter");
 let saveNewFriendButton = document.createElement("button");
 const savedFriendsDiv = document.getElementById("container-div-3");
 let nameInput = document.createElement("input");
+let newFriendDiv = document.createElement("div");
 
 console.log(likeCounter);
 //make a way to create a new "friend".
 
 function addFriend() {
-
     //create a place to type the friend's name
+    newFriendDiv = document.createElement("div");
+    parentDiv.append(newFriendDiv);
     let nameInput = document.createElement("input");
-    
     nameInput.placeholder = "Enter Friend's Name Here"
     console.log(nameInput); //check the input field
-    childFriendDiv.append(nameInput);
+    newFriendDiv.append(nameInput);
 
     //once the friend's name is entered, make a button to save the name
-    
     let saveNewFriendButton = document.createElement("button");
-    parentDiv.append(saveNewFriendButton);
+    newFriendDiv.append(saveNewFriendButton);
     
 }
 
@@ -43,7 +43,7 @@ function friendSaved(name) {
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
     childFriendDiv.prepend(personPic);
-    
+
      //create a 'like' button for the new friend
      likeButton.textContent = `👍`;
      childFriendDiv.append(likeButton);

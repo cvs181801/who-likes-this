@@ -41,7 +41,6 @@ function friendSaved(name) {
      //create a 'unlike' button for the new friend
      unlikeButton.textContent = `👎`;
      childFriendDiv.append(unlikeButton);
-     console.log(unlikeButton);
 
 }
 

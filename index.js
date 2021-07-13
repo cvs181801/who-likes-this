@@ -25,10 +25,7 @@ function friendSaved(name) {
     friendNameLabel = document.createElement("p");
     friendNameLabel.textContent = `${name}`;
     childFriendDiv.append(friendNameLabel);
-    console.log(friendNameLabel);
-    //nameInput = document.createElement("input"); we just had this here for reference
     
-
     //create a 'person icon' image, then attach it above the name
     let personPic = document.createElement("img");
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
@@ -36,11 +33,11 @@ function friendSaved(name) {
 
      //create a 'like' button for the new friend
      likeButton.textContent = `👍`;
-     childFriendDiv.append(likeButton);
+     friendNameLabel.append(likeButton);
      
      //create a 'unlike' button for the new friend
      unlikeButton.textContent = `👎`;
-     childFriendDiv.append(unlikeButton);
+     friendNameLabel.append(unlikeButton);
 
 }
 
@@ -52,7 +49,6 @@ function addFriend() {
     parentDiv.append(newFriendDiv);
     let nameInput = document.createElement("input");
     nameInput.placeholder = "Enter Friend's Name Here"
-    console.log(nameInput); //check the input field
     newFriendDiv.append(nameInput);
 
     //once the friend's name is entered, make a button to save the name

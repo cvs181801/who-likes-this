@@ -10,16 +10,17 @@ let likeCounter = document.getElementById("like-counter");
 console.log(likeCounter);
 //make a way to create a new "friend".
 
-function addFriend(name) {
+function addFriend() {
 
-    //create a new 'friend' using the name, then attach it below
+    //create a new 'friend' with a place to type the friend's name
     childFriendDiv = document.createElement("div");
     childFriendDiv.id = "friend";
     let nameInput = document.createElement("input");
     parentDiv.append(childFriendDiv);
+    nameInput.placeholder = "Enter Friend's Name Here"
     console.log(nameInput); //check the input field
     childFriendDiv.append(nameInput);
-    childFriendDiv.textContent = `${nameInput.value}`;
+    //childFriendDiv.textContent = `${nameInput}`;
 
     //create a 'person icon' image, then attach it above the name
     let personPic = document.createElement("img");
@@ -66,7 +67,7 @@ unlikeButton.addEventListener("click", function(e) {
 addNewButton.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("add new friend btn worked!");
-    return addFriend("Joy");
+    return addFriend();
 })
 
 

@@ -16,7 +16,6 @@ function addFriend(name) {
     childFriendDiv = document.createElement("div");
     childFriendDiv.id = "friend";
     let nameInput = document.createElement("input");
-    nameInput.type = text;
     parentDiv.append(childFriendDiv);
     console.log(nameInput); //check the input field
     childFriendDiv.append(nameInput);

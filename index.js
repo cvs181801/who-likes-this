@@ -25,6 +25,7 @@ function addFriend() {
 
     //once the friend's name is entered, make a button to save the name
     let saveNewFriendButton = document.createElement("button");
+    saveNewFriendButton.textContent = "Add Friend";
     newFriendDiv.append(saveNewFriendButton);
     
 }

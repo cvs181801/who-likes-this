@@ -26,9 +26,10 @@ img {
     max-height: 400px;
 }
 
-#add-new {
+#add-new,
+#save-friend-btn {
     background-color: navy;
-    color: var(--med-blue);
+    color: whitesmoke;
     border-radius: 12px;
 }
 

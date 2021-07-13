@@ -33,13 +33,31 @@ function friendSaved(name) {
 
      //create a 'like' button for the new friend
      likeButton = document.createElement("button");
+     likeButton.id = `${name}-like-btn`;
      likeButton.textContent = `👍`;
      friendNameLabel.append(likeButton);
      
      //create a 'unlike' button for the new friend
      unlikeButton = document.createElement("button");
+     unlikeButton.id = `${name}-unlike-btn`;
      unlikeButton.textContent = `👎`;
      friendNameLabel.append(unlikeButton);
+
+     //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
+
+//  let likeCount = 0;
+
+//  likeButton.addEventListener("click", function(e) {
+//      e.preventDefault();
+//      likeCount++;
+//      console.log(likeCount);
+//      let likeCounter = document.getElementById("like-counter");
+//      if (likeCounter <= 1) {
+//          return likeCounter.textContent = `${name1} liked this post.`
+//      } else {
+//          return likeCounter.textContent = `${name1} and ${name2} liked this post.`
+//      }
+//  }) 
 
 }
 
@@ -71,28 +89,28 @@ function addFriend() {
 
 //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
 
-let likeCount = 0;
+// let likeCount = 0;
 
-likeButton.addEventListener("click", function(e) {
-    e.preventDefault();
-    likeCount++;
-    console.log(likeCount);
-    let likeCounter = document.getElementById("like-counter");
-    if (likeCounter <= 1) {
-        return likeCounter.textContent = `${likeCount} person liked this post.`
-    } else {
-        return likeCounter.textContent = `${likeCount} people liked this post.`
-    }
+// likeButton.addEventListener("click", function(e) {
+//     e.preventDefault();
+//     likeCount++;
+//     console.log(likeCount);
+//     let likeCounter = document.getElementById("like-counter");
+//     if (likeCounter <= 1) {
+//         return likeCounter.textContent = `${likeCount} person liked this post.`
+//     } else {
+//         return likeCounter.textContent = `${likeCount} people liked this post.`
+//     }
   
-}) 
+// }) 
 
-unlikeButton.addEventListener("click", function(e) {
-    e.preventDefault();
-    likeCount -= 1;
-    console.log(likeCount);
-    let likeCounter = document.getElementById("like-counter");
-    likeCounter.textContent = `${likeCount} person unliked this post.`
-})
+// unlikeButton.addEventListener("click", function(e) {
+//     e.preventDefault();
+//     likeCount -= 1;
+//     console.log(likeCount);
+//     let likeCounter = document.getElementById("like-counter");
+//     likeCounter.textContent = `${likeCount} person unliked this post.`
+// })
 
 //make the add new button create a new 'friend'.
 

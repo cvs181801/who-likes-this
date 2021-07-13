@@ -32,10 +32,12 @@ function friendSaved(name) {
     childFriendDiv.prepend(personPic);
 
      //create a 'like' button for the new friend
+     likeButton = document.createElement("button");
      likeButton.textContent = `👍`;
      friendNameLabel.append(likeButton);
      
      //create a 'unlike' button for the new friend
+     unlikeButton = document.createElement("button");
      unlikeButton.textContent = `👎`;
      friendNameLabel.append(unlikeButton);
 

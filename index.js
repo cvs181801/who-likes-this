@@ -92,6 +92,7 @@ addNewButton.addEventListener('click', function(e) {
 saveNewFriendButton.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("save new friend button worked!");
-    return friendSaved(nameInput.value)
+    return friendSaved(nameInput.value);
 })
     
+console.log("name innput =" + nameInput.value);

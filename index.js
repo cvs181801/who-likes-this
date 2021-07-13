@@ -6,6 +6,7 @@ let childFriendDiv = document.createElement("div");
 let likeButton = document.createElement("button");
 let unlikeButton = document.createElement("button");
 let likeCounter = document.getElementById("like-counter");
+let saveNewFriendButton = document.createElement("button");
 
 console.log(likeCounter);
 //make a way to create a new "friend".
@@ -27,6 +28,13 @@ function addFriend() {
     personPic.src = "/Users/casvalkyriespicer/Documents/GitHub/who-likes-this/pics/person.jpg";
     childFriendDiv.prepend(personPic);
 
+    
+
+    //once the friend's name is entered, make a button to save the name
+    if (nameInput.value) {
+        let saveNewFriendButton = document.createElement("button");
+        childFriendDiv.append(saveNewFriendButton);
+
     //create a 'like' button
     likeButton.textContent = `👍`;
     childFriendDiv.append(likeButton);
@@ -35,8 +43,15 @@ function addFriend() {
     unlikeButton.textContent = `👎`;
     childFriendDiv.append(unlikeButton);
     console.log(unlikeButton);
+
+    }
 }
 
+//save the new friend when the save new friend button is pushed.
+
+// function friendSaved() {
+
+// }
 //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
 
 let likeCount = 0;
@@ -70,5 +85,10 @@ addNewButton.addEventListener('click', function(e) {
     return addFriend();
 })
 
-
+//make the 'save new friend' button work
+saveNewFriendButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log("save new friend button worked!");
+    return friendSaved()
+})
     

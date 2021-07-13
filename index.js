@@ -12,26 +12,7 @@ let nameInput = document.createElement("input");
 let newFriendDiv = document.createElement("div");
 
 console.log(likeCounter);
-//make a way to create a new "friend".
 
-function addFriend() {
-    //create a place to type the friend's name
-    newFriendDiv = document.createElement("div");
-    parentDiv.append(newFriendDiv);
-    let nameInput = document.createElement("input");
-    nameInput.placeholder = "Enter Friend's Name Here"
-    console.log(nameInput); //check the input field
-    newFriendDiv.append(nameInput);
-
-    //once the friend's name is entered, make a button to save the name
-    let saveNewFriendButton = document.createElement("button");
-    saveNewFriendButton.id = "save-friend-btn";
-    saveNewFriendButton.textContent = "Add Friend";
-    newFriendDiv.append(saveNewFriendButton);
-    
-}
-saveNewFriendButton = document.getElementById("save-friend-btn");
-console.log(saveNewFriendButton);
 //save the new friend when the save new friend button is pushed.
 
 function friendSaved(name) {
@@ -57,6 +38,36 @@ function friendSaved(name) {
      console.log(unlikeButton);
 
 }
+
+//make a way to create a new "friend".
+
+function addFriend() {
+    //create a place to type the friend's name
+    newFriendDiv = document.createElement("div");
+    parentDiv.append(newFriendDiv);
+    let nameInput = document.createElement("input");
+    nameInput.placeholder = "Enter Friend's Name Here"
+    console.log(nameInput); //check the input field
+    newFriendDiv.append(nameInput);
+
+    //once the friend's name is entered, make a button to save the name
+    const saveNewFriendButton = document.createElement("button");
+    saveNewFriendButton.id = "save-friend-btn";
+    saveNewFriendButton.textContent = "Add Friend";
+    newFriendDiv.append(saveNewFriendButton);
+
+    //make the 'save new friend' button work
+     
+    saveNewFriendButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log("save new friend button worked!");
+    return friendSaved(nameInput.value);
+})
+    
+}
+saveNewFriendButton = document.getElementById("save-friend-btn");
+console.log(saveNewFriendButton);
+
 //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
 
 let likeCount = 0;
@@ -90,11 +101,6 @@ addNewButton.addEventListener('click', function(e) {
     return addFriend();
 })
 
-//make the 'save new friend' button work
-saveNewFriendButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    console.log("save new friend button worked!");
-    return friendSaved(nameInput.value);
-})
+
     
 console.log("name input =" + nameInput.value);

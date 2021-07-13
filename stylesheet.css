@@ -47,6 +47,12 @@ img {
     display: grid;
 }
 
-#container-div-2 div {
+.friend {
+    background-color: var(--med-blue);
+}
+
+p {
+    border: 2px solid red;
+    color: whitesmoke;
     background-color: var(--med-blue);
 }

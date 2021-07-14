@@ -48,6 +48,7 @@ img {
     grid-gap: .25em;
     grid-template-columns: .5fr .5fr .5fr;
     grid-template-rows: 5em;
+    margin: 1em;
 }
 
 .friend {

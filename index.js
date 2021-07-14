@@ -38,19 +38,13 @@ function friendSaved(name) {
      friendNameLabel.append(likeButton);
 
      //make the 'like' button count how many likes, and from which friends.
-     //let likeCount = 0;
 
   likeButton.addEventListener("click", function(e) {
       e.preventDefault();
-      //likeCount++;
-      //console.log(likeCount);
       let likeCounter = document.getElementById("like-counter");
-      //if (likeCounter <= 1) {
-          return likeCounter.textContent = `${name} liked this post.`
-//      } else {
-//          return likeCounter.textContent = `${name1} and ${name2} liked this post.`
-//      }
-//  }) 
+      likeCounter.textContent = `${name} liked this post.`;
+
+  }) 
      
     //  //create a 'unlike' button for the new friend
     //  unlikeButton = document.createElement("button");

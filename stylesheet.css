@@ -18,14 +18,14 @@ body {
     background-color: grey;
     padding: 1em;
     font-family: inherit;
-    width: 34vw;
-    margin: 0 33em 1em 25em;
+    /*width: 34vw;*/
+    margin: 0 33em 1em 33em;
 }
 
 img {
     object-fit: cover;
     width: 30%;
-    max-height: 100px;
+    max-height: 105px;
 }
 
 #add-new,

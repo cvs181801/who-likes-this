@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
     text-align: center;
     align-content: center;
+    justify-content: center;
 }
 
 #post {
@@ -38,6 +39,7 @@ img {
 }
 
 .side-div {
+    border: 2px solid magenta;
     width: 30vw;
     height: 30vh;
 }

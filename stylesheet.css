@@ -19,13 +19,19 @@ body {
     padding: 1em;
     font-family: inherit;
     /*width: 34vw;*/
-    margin: 0 20em 1em 20em;
+    margin: 0 33em 1em 33em;
 }
 
 img {
     object-fit: cover;
     width: 30%;
     max-height: 105px;
+}
+
+#heroimg {
+    object-fit: cover;
+    width: 100%;
+    max-height: 400px;  
 }
 
 #add-new,

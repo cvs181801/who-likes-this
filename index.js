@@ -17,6 +17,7 @@ console.log(likeCounter);
 
 function friendSaved(name) {
     parentDiv.textContent = "";
+
     //save the new friend
     savedFriendsDiv = document.getElementById("container-div-3");
     childFriendDiv = document.createElement("div");
@@ -43,15 +44,7 @@ function friendSaved(name) {
       e.preventDefault();
       let likeCounter = document.getElementById("like-counter");
       likeCounter.textContent = `${name} liked this post.`;
-
   }) 
-     
-    //  //create a 'unlike' button for the new friend
-    //  unlikeButton = document.createElement("button");
-    //  unlikeButton.id = `${name}-unlike-btn`;
-    //  unlikeButton.textContent = `👎`;
-    //  friendNameLabel.append(unlikeButton);
-
 }
 
 //make a way to create a new "friend".

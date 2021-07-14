@@ -4,7 +4,7 @@ const addNewButton = document.getElementById("add-new");
 const parentDiv = document.getElementById("container-div-2");
 let childFriendDiv = document.createElement("div");
 let likeButton = document.createElement("button");
-let unlikeButton = document.createElement("button");
+//let unlikeButton = document.createElement("button");
 let likeCounter = document.getElementById("like-counter");
 let saveNewFriendButton = document.createElement("button");
 let savedFriendsDiv = document.getElementById("container-div-3");
@@ -36,28 +36,27 @@ function friendSaved(name) {
      likeButton.id = `${name}-like-btn`;
      likeButton.textContent = `👍`;
      friendNameLabel.append(likeButton);
-     
-     //create a 'unlike' button for the new friend
-     unlikeButton = document.createElement("button");
-     unlikeButton.id = `${name}-unlike-btn`;
-     unlikeButton.textContent = `👎`;
-     friendNameLabel.append(unlikeButton);
 
-     //make the 'like' button and 'unlike' button count how many likes and unlikes, and from which friends.
+     //make the 'like' button count how many likes, and from which friends.
+     //let likeCount = 0;
 
-//  let likeCount = 0;
-
-//  likeButton.addEventListener("click", function(e) {
-//      e.preventDefault();
-//      likeCount++;
-//      console.log(likeCount);
-//      let likeCounter = document.getElementById("like-counter");
-//      if (likeCounter <= 1) {
-//          return likeCounter.textContent = `${name1} liked this post.`
+  likeButton.addEventListener("click", function(e) {
+      e.preventDefault();
+      //likeCount++;
+      //console.log(likeCount);
+      let likeCounter = document.getElementById("like-counter");
+      //if (likeCounter <= 1) {
+          return likeCounter.textContent = `${name} liked this post.`
 //      } else {
 //          return likeCounter.textContent = `${name1} and ${name2} liked this post.`
 //      }
 //  }) 
+     
+    //  //create a 'unlike' button for the new friend
+    //  unlikeButton = document.createElement("button");
+    //  unlikeButton.id = `${name}-unlike-btn`;
+    //  unlikeButton.textContent = `👎`;
+    //  friendNameLabel.append(unlikeButton);
 
 }
 

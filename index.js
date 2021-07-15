@@ -49,7 +49,7 @@ friendNameLabel.addEventListener("click", function(e) {
     console.log(e.currentTarget);
     console.log(e.target);
     let targetClick = e.target;
-    if (targetClick.tagName === "button") {
+    if (targetClick.tagName == "button") {
         console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
     }
     })

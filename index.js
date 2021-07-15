@@ -46,7 +46,8 @@ function friendSaved(name) {
 
     //   let likeCounter = document.getElementById("like-counter");
     //   likeCounter.textContent = `${name} liked this post.`;
-  }) 
+  } ) 
+  console.log(likeBtnArray);
 
 // friendNameLabel.onClick = function(e) {
 //     e.preventDefault;

@@ -60,6 +60,8 @@ function friendSaved(name) {
 //     }
 }
 
+console.log(likeBtnArray);
+
 //make a way to create a new "friend".
 
 function addFriend() {

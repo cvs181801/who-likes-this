@@ -44,11 +44,11 @@ function friendSaved(name) {
 //       likeCounter.textContent = `${name} liked this post.`;
 //   }) 
 
-// childFriendDiv.addEventListener("click", function(e) {
-//     if(e.target && e.target.nodeName === "button") {
-//         console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
-//     }
-// })
+childFriendDiv.addEventListener("click", function(e) {
+    if(e.target && e.target.nodeName === "button") {
+        console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
+    }
+})
 }
 
 //make a way to create a new "friend".

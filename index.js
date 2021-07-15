@@ -44,7 +44,7 @@ function friendSaved(name) {
 //       likeCounter.textContent = `${name} liked this post.`;
 //   }) 
 
-childFriendDiv.addEventListener("click", function(e) {
+friendNameLabel.addEventListener("click", function(e) {
     if(e.target && e.target.nodeName === "button") {
         console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
     }

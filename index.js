@@ -48,15 +48,15 @@ function friendSaved(name) {
     //   likeCounter.textContent = `${name} liked this post.`;
   }) 
 
-friendNameLabel.onClick = function(e) {
-    e.preventDefault;
-    console.log(e.currentTarget);
-    console.log(e.target);
-    let targetClick = e.target;
-    if (!targetClick) return;
-    if (!friendNameLabel.contains(targetClick)) return;  //console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
+// friendNameLabel.onClick = function(e) {
+//     e.preventDefault;
+//     console.log(e.currentTarget);
+//     console.log(e.target);
+//     let targetClick = e.target;
+//     if (!targetClick) return;
+//     if (!friendNameLabel.contains(targetClick)) return;  //console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
     
-    }
+//     }
 }
 
 //make a way to create a new "friend".

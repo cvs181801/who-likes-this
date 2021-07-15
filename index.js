@@ -38,11 +38,17 @@ function friendSaved(name) {
     friendNameLabel.append(likeButton);
 
      //make the 'like' button count how many likes, and from which friends.
-    likeButton.addEventListener("click", function(e) {
-      e.preventDefault();
-      let likeCounter = document.getElementById("like-counter");
-      likeCounter.textContent = `${name} liked this post.`;
-  }) 
+//     likeButton.addEventListener("click", function(e) {
+//       e.preventDefault();
+//       let likeCounter = document.getElementById("like-counter");
+//       likeCounter.textContent = `${name} liked this post.`;
+//   }) 
+
+childFriendDiv.addEventListener("click", function(e) {
+    if(e.target && e.target.nodeName === "button") {
+        console.log(`${name}`, e.target.textContent + "was clicked!")
+    }
+})
 }
 
 //make a way to create a new "friend".

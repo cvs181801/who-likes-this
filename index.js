@@ -48,10 +48,11 @@ friendNameLabel.addEventListener("click", function(e) {
     e.preventDefault;
     console.log(e.currentTarget);
     console.log(e.target);
-    if(e.currentTarget && e.target.nodeName == "button") {
+    let targetClick = e.target;
+    if (targetClick.tagName === "button") {
         console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
     }
-})
+    })
 }
 
 //make a way to create a new "friend".

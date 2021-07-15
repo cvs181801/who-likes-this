@@ -44,7 +44,7 @@ function friendSaved(name) {
 //       likeCounter.textContent = `${name} liked this post.`;
 //   }) 
 
-friendNameLabel.addEventListener("click", function(e) {
+friendNameLabel.onClick = function(e) {
     e.preventDefault;
     console.log(e.currentTarget);
     console.log(e.target);
@@ -52,7 +52,7 @@ friendNameLabel.addEventListener("click", function(e) {
     if (targetClick.tagName == "button") {
         console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
     }
-    })
+    }
 }
 
 //make a way to create a new "friend".

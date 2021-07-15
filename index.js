@@ -45,7 +45,7 @@ function friendSaved(name) {
 //   }) 
 
 friendNameLabel.addEventListener("click", function(e) {
-    if(e.target && e.target.nodeName === "button") {
+    if(e.currentTarget && e.target.nodeName === "button") {
         console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
     }
 })

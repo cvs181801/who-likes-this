@@ -41,14 +41,13 @@ function friendSaved(name) {
     friendNameLabel.append(likeButton);
     //});
     
-   
     console.log(likeBtnArray);
+
     //make the 'like' button work
-    // likeButton.addEventListener("click", function(e) {
-    //  e.preventDefault();
-    //  likeBtnArray.push(name);
-     
-    //  console.log(likeBtnArray);
+    likeButton.addEventListener("click", function(e) {
+     e.preventDefault();
+     console.log(`${likeBtnArray[0]}`);
+     console.log("likeBtnArray button worked");
  
 }
 

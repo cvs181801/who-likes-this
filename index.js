@@ -44,16 +44,16 @@ function friendSaved(name) {
     console.log(likeBtnArray);
 
     //make the 'like' button work
-    likeButton.addEventListener("click", function(e) {
+    likeButton.addEventListener("click", i, function(e) {
      e.preventDefault();
      if (likeBtnArray.length === 0)  {
          return;
      } else if (likeBtnArray.length === 1) {
-        likeCounter.textContent = `${likeBtnArray[0]} likes this post.`;
+        likeCounter.textContent = `${likeBtnArray[i]} likes this post.`;
     } else if (likeBtnArray.length === 2) {
-        likeCounter.textContent = `${likeBtnArray[0]} and ${likeBtnArray[1]} like this post.`;
+        likeCounter.textContent = `${likeBtnArray[i]} and ${likeBtnArray[i]} like this post.`;
     } else {
-        likeCounter.textContent = `${likeBtnArray[0]}, ${likeBtnArray[1]} and ${likeBtnArray.length} others like this post.`;
+        likeCounter.textContent = `${likeBtnArray[i]}, ${likeBtnArray[i]} and ${likeBtnArray.length} others like this post.`;
          }
     })
      

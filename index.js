@@ -18,7 +18,7 @@ function friendSaved(name) {
     parentDiv.textContent = "";
 
     likeBtnArray.push(name);
-    likeBtnArray.forEach((name) => {
+    //likeBtnArray.forEach((name) => {
 
     //save the new friend
     savedFriendsDiv = document.getElementById("container-div-3");
@@ -39,7 +39,7 @@ function friendSaved(name) {
     likeButton.id = `${name}-like-btn`;
     likeButton.textContent = `👍`;
     friendNameLabel.append(likeButton);
-    });
+    //});
     
    
     console.log(likeBtnArray);
@@ -49,21 +49,7 @@ function friendSaved(name) {
     //  likeBtnArray.push(name);
      
     //  console.log(likeBtnArray);
-     
-    // //   let likeCounter = document.getElementById("like-counter");
-    // //   likeCounter.textContent = `${name} liked this post.`;
-    // } ) 
-    
-
-// friendNameLabel.onClick = function(e) {
-//     e.preventDefault;
-//     console.log(e.currentTarget);
-//     console.log(e.target);
-//     let targetClick = e.target;
-//     if (!targetClick) return;
-//     if (!friendNameLabel.contains(targetClick)) return;  //console.log("event delegation!") //`${name}`, e.target.textContent + "was clicked!")
-    
-//     }
+ 
 }
 
 

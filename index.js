@@ -41,9 +41,9 @@ function friendSaved(name) {
      //make the 'like' button work
     likeButton.addEventListener("click", function(e) {
       e.preventDefault();
-      const newArray = likeBtnArray.map(name => name + "hi");
+      likeBtnArray.push(name);
       console.log(likeBtnArray);
-      console.log(newArray);
+      
     //   let likeCounter = document.getElementById("like-counter");
     //   likeCounter.textContent = `${name} liked this post.`;
   } ) 

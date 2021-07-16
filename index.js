@@ -10,12 +10,15 @@ let savedFriendsDiv = document.getElementById("container-div-3");
 let nameInput = document.createElement("input");
 let newFriendDiv = document.createElement("div");
 
-console.log(likeCounter);
+let likeBtnArray = []; 
 
 //save the new friend. (See the 'make a way to create a new friend part below)
 
 function friendSaved(name) {
     parentDiv.textContent = "";
+
+    likeBtnArray.push(name);
+    likeBtnArray.forEach((name) => {
 
     //save the new friend
     savedFriendsDiv = document.getElementById("container-div-3");
@@ -36,9 +39,9 @@ function friendSaved(name) {
     likeButton.id = `${name}-like-btn`;
     likeButton.textContent = `👍`;
     friendNameLabel.append(likeButton);
-
-    likeBtnArray = []; 
-    likeBtnArray.push(name);
+    });
+    
+   
     console.log(likeBtnArray);
     //make the 'like' button work
     // likeButton.addEventListener("click", function(e) {

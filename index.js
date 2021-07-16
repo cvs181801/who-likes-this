@@ -49,6 +49,7 @@ function friendSaved(name) {
      console.log(`${likeBtnArray[0]}`);
      console.log("likeBtnArray button worked");
  
+    })
 }
 
 

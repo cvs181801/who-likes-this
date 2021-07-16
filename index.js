@@ -41,7 +41,7 @@ function friendSaved(name) {
      //make the 'like' button work
     likeButton.addEventListener("click", function(e) {
       e.preventDefault();
-      const newArray = likeBtnArray.map (name => newArray.push(name));
+      const newArray = likeBtnArray.map (name => array.push(name));
       console.log(likeBtnArray);
       console.log(newArray);
 

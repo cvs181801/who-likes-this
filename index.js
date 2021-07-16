@@ -49,11 +49,11 @@ function friendSaved(name) {
      if (likeBtnArray.length === 0)  {
          return;
      } else if (likeBtnArray.length === 1) {
-        console.log(`${likeBtnArray[0]} likes this post.`);
+        likeCounter.textContent = `${likeBtnArray[0]} likes this post.`;
     } else if (likeBtnArray.length === 2) {
-        console.log(`${likeBtnArray[0]} and ${likeBtnArray[1]} like this post.`);
+        likeCounter.textContent = `${likeBtnArray[0]} and ${likeBtnArray[1]} like this post.`;
     } else {
-        console.log(`${likeBtnArray[0]}, ${likeBtnArray[1]} and ${likeBtnArray.length} others like this post.`);
+        likeCounter.textContent = `${likeBtnArray[0]}, ${likeBtnArray[1]} and ${likeBtnArray.length} others like this post.`;
          }
     })
      

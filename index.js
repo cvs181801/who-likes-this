@@ -38,16 +38,16 @@ function friendSaved(name) {
     friendNameLabel.append(likeButton);
 
     likeBtnArray = [];
-     //make the 'like' button work
+    //make the 'like' button work
     likeButton.addEventListener("click", function(e) {
-      e.preventDefault();
-      likeBtnArray.push(name);
-      console.log(likeBtnArray);
-      
+     e.preventDefault();
+     likeBtnArray.push(name).forEach(name => console.log("Hey" + name));
+     console.log(likeBtnArray);
+     
     //   let likeCounter = document.getElementById("like-counter");
     //   likeCounter.textContent = `${name} liked this post.`;
-  } ) 
-  
+    } ) 
+    
 
 // friendNameLabel.onClick = function(e) {
 //     e.preventDefault;

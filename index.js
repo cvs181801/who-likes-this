@@ -9,7 +9,7 @@ let saveNewFriendButton = document.createElement("button");
 let savedFriendsDiv = document.getElementById("container-div-3");
 let nameInput = document.createElement("input");
 let newFriendDiv = document.createElement("div");
-let friendNameLabel = document.getElementById("like-btn");
+//let friendNameLabel = document.getElementById("like-btn");
 
 let likeBtnArray = []; 
 
@@ -42,7 +42,7 @@ function friendSaved(name) {
     likeButton.textContent = `👍`;
     friendNameLabel.append(likeButton);
     //});
-    let friendNameLabel = document.getElementById("like-btn");
+    //let friendNameLabel = document.getElementById("like-btn");
     console.log(friendNameLabel);
 
     //make the 'like' button work

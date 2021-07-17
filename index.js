@@ -10,6 +10,7 @@ let savedFriendsDiv = document.getElementById("container-div-3");
 let nameInput = document.createElement("input");
 let newFriendDiv = document.createElement("div");
 
+
 let likeBtnArray = []; 
 
 //save the new friend. (See the 'make a way to create a new friend part below)
@@ -17,7 +18,7 @@ let likeBtnArray = [];
 function friendSaved(name) {
     parentDiv.textContent = "";
 
-    likeBtnArray.push(name);
+    //likeBtnArray.push(name);
     //likeBtnArray.forEach((name) => {
 
     //save the new friend
@@ -36,24 +37,28 @@ function friendSaved(name) {
 
      //create a 'like' button for the new friend
     likeButton = document.createElement("button");
-    likeButton.id = `${name}-like-btn`;
+    likeButton.className = "like-btn";
+    likeButton.id = "like-btn";
     likeButton.textContent = `👍`;
     friendNameLabel.append(likeButton);
     //});
-    
-    console.log(likeBtnArray);
+    let friendNameLabel = document.getElementById("like-btn");
+    console.log(friendNameLabel);
 
     //make the 'like' button work
-    likeButton.addEventListener("click", i, function(e) {
+    friendNameLabel.addEventListener("click", function(e) {
      e.preventDefault();
+     if(e.target.className === "like-btn") {
+        likeBtnArray.push(name);
+     }
      if (likeBtnArray.length === 0)  {
          return;
      } else if (likeBtnArray.length === 1) {
-        likeCounter.textContent = `${likeBtnArray[i]} likes this post.`;
+        likeCounter.textContent = `${likeBtnArray[0]} likes this post.`;
     } else if (likeBtnArray.length === 2) {
-        likeCounter.textContent = `${likeBtnArray[i]} and ${likeBtnArray[i]} like this post.`;
+        likeCounter.textContent = `${likeBtnArray[0]} and ${likeBtnArray[1]} like this post.`;
     } else {
-        likeCounter.textContent = `${likeBtnArray[i]}, ${likeBtnArray[i]} and ${likeBtnArray.length} others like this post.`;
+        likeCounter.textContent = `${likeBtnArray[0]}, ${likeBtnArray[1]} and ${likeBtnArray.length} others like this post.`;
          }
     })
      

@@ -58,7 +58,7 @@ function friendSaved(name) {
     } else if (likeBtnArray.length === 2) {
         likeCounter.textContent = `${likeBtnArray[0]} and ${likeBtnArray[1]} like this post.`;
     } else {
-        likeCounter.textContent = `${likeBtnArray[0]}, ${likeBtnArray[1]} and ${likeBtnArray.length} others like this post.`;
+        likeCounter.textContent = `${likeBtnArray[0]}, ${likeBtnArray[1]} and ${likeBtnArray.length - 2} others like this post.`;
          }
     })
      
